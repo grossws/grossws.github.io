@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="home">
+  <p class="disclaimer">
+    <strong>Disclaimer:</strong> This is personal blog.
+    Any views or opinions in this blog are personal and belong to blog author and do not represent those of
+    my employer or organizations I'm associated with.
+  </p>
+  <h1 class="page-heading">Posts</h1>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

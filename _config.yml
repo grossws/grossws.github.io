@@ -1,0 +1,29 @@
+title: gross.ws
+email: me@gross.ws
+description: >
+  Personal blog
+baseurl: ""
+url: "https://gross.ws" # the base hostname & protocol for your site
+
+twitter_username: grossws
+github_username: grossws
+linkedin_username: grossws
+google_plus_username: KonstantinGribov
+facebook_username: grossws
+
+timezone: Europe/Moscow
+excerpt_separator: "<!-- cut -->"
+copyright: "&copy; 2016 Konstantin Gribov"
+
+# Build settings
+permalink: /blog/:categories/:year/:month/:day/:title.html
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
